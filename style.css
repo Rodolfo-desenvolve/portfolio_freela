@@ -54,9 +54,9 @@ header nav ul .formato-4 {
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  background: linear-gradient(to left, #00E80E -100%, #000000);
+  background-color: #091c25;
   color: #fff;
-  padding: 30px 0;
+  padding: 30px 0px;
 }
 .container p {
   font-size: 12px;
@@ -65,7 +65,6 @@ header nav ul .formato-4 {
 }
 .container .linha-interna {
   width: 90%;
-  border: 2px solid #fff;
   margin: auto;
 }
 .container .linha-interna .flex {
@@ -97,7 +96,7 @@ header nav ul .formato-4 {
   flex-direction: row;
   width: 100%;
   padding: 20px 10px;
-  background-color: #004d40;
+  background-color: transparent;
   position: relative;
 }
 .container .linha-interna .flex .conteudo-maior .block .coluna-1 .top .flex-2 {
@@ -124,12 +123,12 @@ header nav ul .formato-4 {
   cursor: pointer;
 }
 .container .linha-interna .flex .conteudo-maior .block .coluna-1 .top a:hover {
-  color: #00E80E;
+  color: #740807;
   transition: all 2s;
   animation: translateY 2s alternate infinite;
 }
 .container .linha-interna .flex .conteudo-maior .block .coluna-1 .rolagem {
-  background-color: #000;
+  background-color: #B62E2C;
   display: flex;
   flex-direction: row;
   padding: 10px 0px 10px 0px;
@@ -207,10 +206,10 @@ header nav ul .formato-4 {
   color: #fff;
 }
 .container .linha-interna .flex .conteudo-maior .flex-3 .conteudo p strong {
-  color: #00d084;
+  color: darkgoldenrod;
 }
 .container .linha-interna .flex .conteudo-maior .flex-3 .conteudo p i {
-  color: #00E80E;
+  color: #B62E2C;
 }
 .container .linha-interna .flex .conteudo-maior .flex-3 .img {
   max-width: 40%;
@@ -334,7 +333,7 @@ header nav ul .formato-4 {
 }
 .container .linha-interna .flex .projetos-contatos .block .texto {
   width: 100%;
-  background-image: linear-gradient(to left, #000, #535353);
+  background-color: transparent;
   padding: 15px 5px;
   border-radius: 5px;
   box-shadow: 1px 2px 3px 1px #fff;
@@ -344,7 +343,7 @@ header nav ul .formato-4 {
 }
 .container .linha-interna .flex .projetos-contatos .block .contatos {
   width: 99%;
-  background-image: linear-gradient(to left, #000, #535353);
+  background-color: transparent;
   border-radius: 5px;
 }
 .container .linha-interna .flex .projetos-contatos .block .contatos .flex-1 {
@@ -390,7 +389,7 @@ header nav ul .formato-4 {
   flex-direction: column;
   width: 280px;
   height: 340px;
-  background-image: linear-gradient(to left, #000, #434343);
+  background-color: transparent;
   border-radius: 5px;
   align-items: center;
   overflow: hidden;
@@ -407,7 +406,7 @@ header nav ul .formato-4 {
 .container .linha-interna .flex .projetos-contatos .block .slide .slider .context .card .carrossel .container {
   display: flex;
   flex-direction: row;
-  transition: transform 0.7s ease-in-out;
+  transition: transform 1s ease-in-out;
   transform: translateX(0);
 }
 .container .linha-interna .flex .projetos-contatos .block .slide .slider .context .card .carrossel .container img {
@@ -478,7 +477,7 @@ header nav ul .formato-4 {
   border-radius: 50%;
 }
 .container .linha-interna .flex .projetos-contatos .block .slide .slider .length-dots .dot.current {
-  background-color: #004d40;
+  background-color: #B62E2C;
 }
 .container .linha-interna .flex .projetos-contatos .block .imgs-projetos {
   width: 100%;
@@ -500,30 +499,51 @@ header nav ul .formato-4 {
 
 .btn-padrao {
   padding: 9px 20px;
-  background: #00d084;
+  background-color: transparent;
   border-radius: 5px;
   color: #fff;
+  border: 1px solid #fff;
   text-decoration: none;
-  box-shadow: 3px 3px 2px 1px #fff;
   transition: all 1s;
   margin-bottom: 5px;
+  transition: all 1s;
 }
 
 .btn-padrao:hover {
-  background-color: transparent;
-  box-shadow: 3px 3px 2px 1px #00d084;
+  transition: all 1s;
+  border-color: #740807;
 }
 
 .projetos {
   display: flex;
   flex-direction: column;
-  background: linear-gradient(to left, #00E80E -100%, #000000);
+  background: darkgoldenrod;
   width: 100%;
   height: auto;
   overflow: hidden;
+  padding: 30px 150px;
+}
+.projetos .text {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px 0;
+  align-items: center;
+  gap: 30px;
+}
+.projetos .text hr {
+  width: 50%;
+  height: 3px;
+  background: #fff;
+  border: none;
+}
+.projetos .text h1 {
+  font-size: 40px;
+  color: #fff;
 }
 .projetos .slide {
   position: relative;
+  padding: 15px;
 }
 .projetos .slide .slider2 {
   overflow: hidden;
@@ -535,21 +555,23 @@ header nav ul .formato-4 {
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
+  gap: 10px;
 }
 .projetos .slide .slider2 .context2 .card {
   display: flex;
   flex-direction: column;
   width: 310px;
   height: 410px;
-  background-image: linear-gradient(to left, #000, #434343);
+  background-color: transparent;
   align-items: center;
   text-align: center;
   overflow: hidden;
   padding-bottom: 10px;
-  border: 2px solid darkgoldenrod;
+  border: 1px solid #fff;
+  border-radius: 10px;
 }
 .projetos .slide .slider2 .context2 .card .carrossel {
-  box-shadow: 1px 1px 1px red;
+  box-shadow: 1px 1px 1px #091c25;
   width: 310px;
   height: 160px;
   overflow: hidden;
@@ -596,7 +618,7 @@ header nav ul .formato-4 {
   display: flex;
   width: 45px;
   height: 45px;
-  color: darkgoldenrod;
+  color: #740807;
   background-color: transparent;
   border: none;
   position: absolute;
@@ -617,7 +639,7 @@ header nav ul .formato-4 {
   transform: translate(-90%, -50%);
 }
 .projetos .slide .slider2 button:hover {
-  background-color: #535353;
+  color: #091c25;
 }
 
 #contatos {
@@ -625,39 +647,43 @@ header nav ul .formato-4 {
   text-align: center;
   align-items: center;
   justify-content: center;
-  background-color: #fff;
+  background-color: #091c25;
 }
 #contatos .flex-5 {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 40px 180px;
+  flex-direction: column;
+  padding: 40px 150px;
   flex-basis: 100%;
   text-align: center;
   align-items: center;
   background-color: transparent;
 }
 #contatos .flex-5 .title-perguntas {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  flex-basis: 35%;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
-#contatos .flex-5 .title-perguntas hr {
-  width: 100px;
-  height: 5px;
-  background-color: #00E80E;
-  border: none;
-  margin: auto;
+#contatos .flex-5 .title-perguntas .text {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 30px;
+  padding: 30px 0;
 }
-#contatos .flex-5 .title-perguntas h1 {
+#contatos .flex-5 .title-perguntas .text hr {
+  width: 50%;
+  height: 3px;
+  background-color: #fff;
+  border: none;
+}
+#contatos .flex-5 .title-perguntas .text h1 {
   font-size: 30px;
-  font-weight: 300;
-  color: #333;
-  padding: 30px;
+  font-weight: bold;
+  color: #fff;
   white-space: nowrap;
 }
 #contatos .flex-5 .title-perguntas .icons {
@@ -665,31 +691,49 @@ header nav ul .formato-4 {
   flex-direction: row;
   justify-content: space-around;
   padding: 20px 0;
-  gap: 10px;
+  gap: 5px;
+  margin-top: -40px;
 }
-#contatos .flex-5 .title-perguntas .icons #icon2, #contatos .flex-5 .title-perguntas .icons #icon1, #contatos .flex-5 .title-perguntas .icons #icon {
+#contatos .flex-5 .title-perguntas .icons #icon2,
+#contatos .flex-5 .title-perguntas .icons #icon1,
+#contatos .flex-5 .title-perguntas .icons #icon {
+  display: flex;
+  flex-direction: column;
   font-size: 25px;
-  color: #939393;
-  transition: all 1s;
-  border-top: 5px solid #939393;
-  border-bottom: 15px solid #939393;
-  border-left: 1px solid #939393;
-  border-right: 1px solid #939393;
+  width: 100px;
+  height: 100px;
+  color: #fff;
+  border: 2px solid #fff;
   padding: 10px 15px;
-  border-radius: 15px;
+  border-radius: 50%;
   cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  animation: Scale 1s alternate infinite;
 }
-#contatos .flex-5 .title-perguntas .icons #icon2 p, #contatos .flex-5 .title-perguntas .icons #icon1 p, #contatos .flex-5 .title-perguntas .icons #icon p {
-  font-size: 18px;
+#contatos .flex-5 .title-perguntas .icons #icon2 i, #contatos .flex-5 .title-perguntas .icons #icon2 p,
+#contatos .flex-5 .title-perguntas .icons #icon1 i,
+#contatos .flex-5 .title-perguntas .icons #icon1 p,
+#contatos .flex-5 .title-perguntas .icons #icon i,
+#contatos .flex-5 .title-perguntas .icons #icon p {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
   font-weight: bold;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
 }
-#contatos .flex-5 .title-perguntas .icons #icon2:hover, #contatos .flex-5 .title-perguntas .icons #icon1:hover, #contatos .flex-5 .title-perguntas .icons #icon:hover {
-  color: #00E80E;
-  transition: all 1s;
-  animation: translateY 2s alternate infinite;
+@keyframes Scale {
+  to {
+    transform: scale(0.8);
+  }
+  from {
+    transform: scale(0.9);
+  }
 }
 #contatos .flex-5 .block-2 {
-  flex-basis: 65%;
+  padding: 0 150px;
 }
 #contatos .flex-5 .block-2 .flex {
   display: flex;
@@ -698,38 +742,38 @@ header nav ul .formato-4 {
   align-items: center;
   padding: 20px 5px;
   border-radius: 5px;
-  background-color: #fff;
+  background-color: transparent;
 }
 #contatos .flex-5 .block-2 .flex .card {
   width: 100%;
   display: flex;
   flex-direction: column;
+  gap: 5px;
 }
 #contatos .flex-5 .block-2 .flex .card .mais-ceta {
   display: flex;
-  padding: 5px 10px;
+  padding: 10px 20px;
   justify-content: space-between;
-  border: 1px solid #939393;
+  border: 1px solid #fff;
   align-items: center;
   cursor: pointer;
-  margin-top: -20px;
 }
 #contatos .flex-5 .block-2 .flex .card .mais-ceta button {
   border: none;
   background-color: transparent;
-  color: #535353;
+  color: #fff;
   padding: 5px 10px;
   font-size: 27px;
   cursor: pointer;
   transition: all 1s;
 }
 #contatos .flex-5 .block-2 .flex .card .mais-ceta button:hover {
-  color: #f69b60;
+  color: #19D16A;
 }
 #contatos .flex-5 .block-2 .flex .card .mais-ceta h2 {
   font-size: 19px;
   font-weight: bold;
-  color: #535353;
+  color: #fff;
   justify-content: center;
   font-size: "roboto";
 }
@@ -738,19 +782,25 @@ header nav ul .formato-4 {
   overflow: hidden;
   transition: all 0.4s;
 }
-#contatos .flex-5 .block-2 .flex .card #mais, #contatos .flex-5 .block-2 .flex .card #mais1, #contatos .flex-5 .block-2 .flex .card #mais2 {
+#contatos .flex-5 .block-2 .flex .card #mais,
+#contatos .flex-5 .block-2 .flex .card #mais1,
+#contatos .flex-5 .block-2 .flex .card #mais2 {
   font-size: 15px;
-  color: #535353;
+  color: #fff;
+  background-color: transparent;
   text-align: justify;
   padding: 0px 50px;
   margin-top: 20px;
 }
 #contatos .flex-5 .block-2 .flex .card .ativo {
-  height: 150px;
+  height: 130px;
   transition: all 0.4s;
 }
 #contatos .footer {
-  background: linear-gradient(to right, #00E80E -100%, #000);
+  background: darkgoldenrod;
+}
+#contatos .footer .bottom {
+  padding-bottom: 100px;
 }
 #contatos .footer .bottom .top {
   display: flex;
@@ -770,13 +820,34 @@ header nav ul .formato-4 {
   font-size: 20px;
   font-weight: 200;
 }
+#contatos .footer .bottom .rolagem {
+  padding: 0 180px;
+}
 #contatos .footer .bottom .rolagem .tela-rolagem {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   padding: 20px 20px;
-  background: linear-gradient(to right, #00E80E -100%, #000);
+  background: transparent;
+  gap: 30px;
+}
+#contatos .footer .bottom .rolagem .tela-rolagem .contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+#contatos .footer .bottom .rolagem .tela-rolagem .contato hr {
+  width: 50%;
+  height: 3px;
+  background-color: #fff;
+  border: none;
+}
+#contatos .footer .bottom .rolagem .tela-rolagem .contato h1 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  padding: 20px;
 }
 #contatos .footer .bottom .rolagem .tela-rolagem h2 {
   color: #fff;
@@ -787,27 +858,26 @@ header nav ul .formato-4 {
   font-size: 25px;
   display: flex;
   flex-direction: row;
-  gap: 30px;
+  gap: 10px;
+  justify-content: center;
 }
 #contatos .footer .bottom .rolagem .tela-rolagem .icons a {
-  color: #F5F5DC;
+  text-decoration: none;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  color: #fff;
   font-size: 30px;
   transition: all 1s;
+  background-color: #091c25;
+  padding: 5px;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
 }
 #contatos .footer .bottom .rolagem .tela-rolagem .icons a:hover {
   animation: translateY 2s alternate infinite;
-  color: #00E80E;
-}
-#contatos p {
-  background-color: #fff;
-  padding: 5px 0;
-}
-#contatos .copy {
-  background: linear-gradient(to right, #00E80E -100%, #000);
-  padding: 5px 0;
-  color: #fff;
-  font-size: 12px;
-  font-weight: 100;
+  color: #740807;
 }
 
 @media screen and (max-width: 1300px) {

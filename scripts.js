@@ -249,19 +249,13 @@ function leiaMais(){
         morebutton.innerHTML = '-';
         icon.style.color = '#00E80E';
         morebutton.style.color = '#00E80E';
-        icon.style.borderTop = '5px solid #00E80E';
-        icon.style.borderBottom = '15px solid #00E80E';
-        icon.style.borderLeft = '1px solid #00E80E';
-        icon.style.borderRight = '1px solid #00E80E';
+        icon.style.border = '2px solid #fff';
     }else{
-        title1.style.color = '#535353';
+        title1.style.color = '#fff';
         morebutton.innerHTML = '+';
-        icon.style.color = '#939393';
-        morebutton.style.color = '#535353';
-        icon.style.borderTop = '5px solid #939393';
-        icon.style.borderBottom = '15px solid #939393';
-        icon.style.borderLeft = '1px solid #939393';
-        icon.style.borderRight = '1px solid #939393';
+        icon.style.color = '#fff';
+        morebutton.style.color = '#fff';
+        icon.style.border = '2px solid #fff';
     }
 }
 
@@ -275,20 +269,14 @@ function leiaMais1(){
         morebutton1.innerHTML = '-';
         morebutton1.style.color = '#00E80E';
         icon1.style.color = '#00E80E';
-        icon1.style.borderTop = '5px solid #00E80E';
-        icon1.style.borderBottom = '15px solid #00E80E';
-        icon1.style.borderLeft = '1px solid #00E80E';
-        icon1.style.borderRight = '1px solid #00E80E';
+        icon1.style.border = '2px solid #fff';
     }else{
-        title2.style.color = '#535353'
+        title2.style.color = '#fff'
         morebutton1.innerHTML = '+'
-        morebutton1.style.color = '#545454'
-        icon1.style.color = '#939393';
+        morebutton1.style.color = '#fff'
+        icon1.style.color = '#fff';
         
-        icon1.style.borderTop = '5px solid #939393';
-        icon1.style.borderBottom = '15px solid #939393';
-        icon1.style.borderLeft = '1px solid #939393';
-        icon1.style.borderRight = '1px solid #939393';
+        icon1.style.border = '2px solid #fff';
     }
 }
 
@@ -303,20 +291,14 @@ function leiaMais2(){
         morebutton2.style.color = '#00E80E';
         icon2.style.color = '#00E80E';
         
-        icon2.style.borderTop = '5px solid #00E80E';
-        icon2.style.borderBottom = '15px solid #00E80E';
-        icon2.style.borderLeft = '1px solid #00E80E';
-        icon2.style.borderRight = '1px solid #00E80E';
+        icon2.style.border = '2px solid #fff';
     }else{
-        title3.style.color = '#535353'
+        title3.style.color = '#fff'
         morebutton2.innerHTML = '+';
-        morebutton2.style.color = '#535353';
-        icon2.style.color = '#939393';
+        morebutton2.style.color = '#fff';
+        icon2.style.color = '#fff';
         
-        icon2.style.borderTop = '5px solid #939393';
-        icon2.style.borderBottom = '15px solid #939393';
-        icon2.style.borderLeft = '1px solid #939393';
-        icon2.style.borderRight = '1px solid #939393';
+        icon2.style.border = '2px solid #fff';
     }
 }
 

@@ -1,57 +1,57 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto';
 }
 
-:root{
+:root {
     --color-amarelo-1: #f8e44b;
 }
 
-body{
+body {
     list-style: none;
     text-decoration: none;
     background-color: aliceblue;
 }
 
-header{
+header {
     width: 100%;
     background-color: #737373;
 
-    nav{
-        ul{
+    nav {
+        ul {
             display: flex;
             list-style: none;
             justify-content: center;
             gap: 30px;
             padding: 5px;
 
-            li{
+            li {
                 font-size: 18px;
                 color: #fff;
                 padding: 5px;
                 cursor: pointer;
             }
 
-            .formato-1{
+            .formato-1 {
                 background-image: linear-gradient(to right, #000, #737373);
                 border-bottom: 1px solid #fff;
             }
 
-            .formato-2{
+            .formato-2 {
                 background-image: linear-gradient(to right, #633aee, #0097b2);
                 border-bottom: 1px solid #fff;
             }
 
-            .formato-3{
-                background-image: linear-gradient(to left, #f69b60 , #0097b2, #737373);
+            .formato-3 {
+                background-image: linear-gradient(to left, #f69b60, #0097b2, #737373);
                 border-bottom: 1px solid #fff;
             }
 
-            .formato-4{
+            .formato-4 {
                 background-image: linear-gradient(to right, #0097b2, #633aee);
                 border-bottom: 1px solid #fff;
             }
@@ -59,76 +59,74 @@ header{
     }
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    
-    background: linear-gradient(to left, #00E80E -100%, #000000);
+    background-color: #091c25;
     color: #fff;
-    padding: 30px 0;
+    padding: 30px 0px;
 
-    p{
+    p {
         font-size: 12px;
         margin-top: 20px;
         text-align: center;
     }
 
-    .linha-interna{
+    .linha-interna {
         width: 90%;
-        border: 2px solid #fff;
         margin: auto;
 
-        .flex{
+        .flex {
             display: flex;
             flex-direction: row;
             justify-content: space-around;
             flex-basis: 100%;
             padding: 49px;
 
-            .conteudo-maior{
+            .conteudo-maior {
                 flex-basis: 70%;
                 background: transparent;
                 border-radius: 5px;
                 overflow: hidden;
                 box-shadow: 1px 2px 3px 1px #fff;
 
-                .block{
+                .block {
                     display: flex;
                     flex-direction: column;
 
-                    .coluna-1{
+                    .coluna-1 {
                         display: flex;
                         flex-direction: column;
                         box-shadow: 1px 2px 3px 1px #fff;
                         position: relative;
 
-                        .top{
+                        .top {
                             display: flex;
                             flex-direction: row;
                             width: 100%;
                             padding: 20px 10px;
-                            background-color: #004d40;
+                            background-color: transparent;
                             position: relative;
 
-                            .flex-2{
+                            .flex-2 {
                                 display: flex;
                                 flex-direction: column;
                                 padding: 20px 10px;
                                 margin: auto;
 
-                                h1{
+                                h1 {
                                     font-size: 25px;
                                     font-weight: 300;
                                 }
 
-                                h2{
+                                h2 {
                                     font-size: 20px;
                                     font-weight: 300;
                                 }
                             }
 
-                            a{
+                            a {
                                 position: absolute;
                                 color: #fff;
                                 right: 15px;
@@ -138,15 +136,15 @@ header{
                                 cursor: pointer;
                             }
 
-                            a:hover{
-                                color: #00E80E;
+                            a:hover {
+                                color: #740807;
                                 transition: all 2s;
                                 animation: translateY 2s alternate infinite;
                             }
                         }
 
-                        .rolagem{
-                            background-color: #000;
+                        .rolagem {
+                            background-color: #B62E2C;
                             display: flex;
                             flex-direction: row;
                             padding: 10px 0px 10px 0px;
@@ -154,11 +152,11 @@ header{
                             //justify-content: end;
                             position: relative;
 
-                            .espaco_foto{
+                            .espaco_foto {
                                 width: 27%;
                             }
 
-                            .tela-rolagem{
+                            .tela-rolagem {
                                 display: flex;
                                 flex-direction: row;
                                 width: 50%;
@@ -166,9 +164,9 @@ header{
                                 align-items: end;
                                 //animation: scrollinfinite 5s linear infinite;
 
-                                .items-fora{
+                                .items-fora {
 
-                                    p{
+                                    p {
                                         font-size: 20px;
                                         font-weight: 600;
                                         white-space: nowrap;
@@ -176,13 +174,13 @@ header{
                                     }
                                 }
 
-                                i{
+                                i {
                                     font-size: 25px;
                                     padding: auto;
                                     color: #F5F5DC;
                                 }
 
-                                p{
+                                p {
                                     font-size: 25px;
                                     font-weight: 600;
                                     margin-top: -2px;
@@ -191,7 +189,7 @@ header{
                             }
                         }
 
-                        .foto-perfil{
+                        .foto-perfil {
                             width: 160px;
                             height: 160px;
                             border-radius: 50%;
@@ -201,7 +199,7 @@ header{
                             left: 50px;
                             top: 50px;
 
-                            .foto{
+                            .foto {
                                 width: 150px;
                                 height: 150px;
                                 border-radius: 50%;
@@ -212,7 +210,7 @@ header{
                     }
                 }
 
-                .flex-3{
+                .flex-3 {
                     display: flex;
                     flex-direction: row;
                     justify-content: space-around;
@@ -220,7 +218,7 @@ header{
                     padding: 30px 10px;
                     margin-top: -30px;
 
-                    .conteudo{
+                    .conteudo {
                         max-width: 50%;
                         display: flex;
                         flex-direction: column;
@@ -228,35 +226,36 @@ header{
                         gap: 25px;
                         align-items: center;
 
-                        h2{
+                        h2 {
                             font-size: 31px;
-                            color: #00d084;;
+                            color: #00d084;
+                            ;
                         }
 
-                        p{
+                        p {
                             text-align: justify;
                             font-size: 15px;
                             font-weight: 100;
                             color: #fff;
 
-                            strong{
-                                color: #00d084;
+                            strong {
+                                color: darkgoldenrod;
                             }
 
-                            i{
-                                color: #00E80E ;
+                            i {
+                                color: #B62E2C;
                             }
                         }
                     }
 
-                    .img{
+                    .img {
                         max-width: 40%;
                         display: flex;
                         margin: auto 0;
                         justify-content: center;
                         border-radius: 5px;
 
-                        img{
+                        img {
                             width: 220px;
                             height: 220px;
                             margin: auto;
@@ -268,23 +267,23 @@ header{
                     }
                 }
 
-                .flex-4{
+                .flex-4 {
                     width: 100%;
                     background-color: transparent;
                     display: flex;
                     margin-top: -10px;
 
-                    .rolagem{
+                    .rolagem {
                         padding: 10px 0;
 
-                        .rolagem-items{
+                        .rolagem-items {
                             display: flex;
                             flex-direction: row;
                             gap: 20px;
                             width: max-content;
                             animation: scrollinfinite 10s linear infinite;
 
-                            .items{
+                            .items {
                                 display: flex;
                                 padding: 5px 18px;
                                 color: #F5F5DC;
@@ -293,7 +292,7 @@ header{
                                 box-shadow: 1px 2px 3px 1px #fff;
                                 align-items: center;
 
-                                p{
+                                p {
                                     font-size: 20px;
                                     justify-content: center;
                                     margin: auto;
@@ -304,7 +303,7 @@ header{
                     }
                 }
 
-                .flex-5{
+                .flex-5 {
                     width: 100%;
                     display: flex;
                     flex-direction: column;
@@ -314,19 +313,19 @@ header{
                     align-items: center;
                     margin-bottom: 30px;
 
-                    h1{
+                    h1 {
                         font-size: 35px;
                         font-weight: 300;
                     }
 
-                    .flex{
+                    .flex {
                         display: flex;
                         flex-direction: column;
                         gap: 20px;
                         width: 100%;
                         align-items: right;
 
-                        .card{
+                        .card {
                             width: 100%;
                             padding: 10px;
                             display: flex;
@@ -334,14 +333,14 @@ header{
                             background-image: linear-gradient(to left, #000, #535353);
                             border-radius: 5px;
                             box-shadow: 1px 2px 3px 1px #fff;
-    
-                            .mais-ceta{
+
+                            .mais-ceta {
                                 display: flex;
                                 justify-content: space-between;
                                 padding: 0 20px;
                                 gap: 200px;
-    
-                                button{
+
+                                button {
                                     border: none;
                                     background-color: transparent;
                                     color: #F5F5DC;
@@ -349,20 +348,20 @@ header{
                                     cursor: pointer;
                                     transition: all 1s;
                                 }
-                                
-                                button:hover{
+
+                                button:hover {
                                     color: #f69b60;
                                 }
-    
-                                h2{
+
+                                h2 {
                                     font-size: 20px;
                                     text-align: center;
                                     color: #F5F5DC;
                                 }
-    
+
                             }
-    
-                            p{
+
+                            p {
                                 font-size: 12px;
                                 font-weight: 500;
                                 color: #F5F5DC;
@@ -375,37 +374,37 @@ header{
 
             }
 
-            .projetos-contatos{
+            .projetos-contatos {
                 flex-basis: 25%;
                 background-color: transparent;
-                display: flex; 
+                display: flex;
                 flex-direction: column;
                 border-radius: 30px;
                 text-align: center;
-                
-                .block{
+
+                .block {
                     display: flex;
                     flex-direction: column;
                     gap: 15px;
-                    
-                    .texto{
+
+                    .texto {
                         width: 100%;
-                        background-image: linear-gradient(to left, #000, #535353);
+                        background-color: transparent;
                         padding: 15px 5px;
                         border-radius: 5px;
                         box-shadow: 1px 2px 3px 1px #fff;
 
-                        h2{
+                        h2 {
                             font-size: 15px;
                         }
                     }
 
-                    .contatos{
+                    .contatos {
                         width: 99%;
-                        background-image: linear-gradient(to left, #000, #535353);
+                        background-color: transparent;
                         border-radius: 5px;
 
-                        .flex-1{
+                        .flex-1 {
                             display: flex;
                             flex-direction: row;
                             width: 100%;
@@ -416,63 +415,63 @@ header{
                             padding: 25px 0;
                             box-shadow: 1px 2px 3px 1px #fff;
 
-                            p{
+                            p {
                                 font-size: 14px;
                                 color: #5ce1e6;
                                 margin-top: -1px;
                             }
 
-                            .ceta{
+                            .ceta {
                                 font-size: 25px;
                                 color: #fff;
                             }
 
-                            i{
+                            i {
                                 font-size: 25px;
                             }
                         }
                     }
 
-                    .slide{
+                    .slide {
                         position: relative;
 
-                        .slider{
+                        .slider {
                             overflow: hidden;
                             width: 280px;
                             border-radius: 5px;
                             scroll-behavior: smooth;
                             box-shadow: 1px 2px 2px 1px #fff;
 
-                            .context{
+                            .context {
                                 display: flex;
                                 width: fit-content;
 
-                                .card{
+                                .card {
                                     display: flex;
                                     flex-direction: column;
                                     width: 280px;
                                     height: 340px;
-                                    background-image: linear-gradient(to left, #000, #434343);
+                                    background-color: transparent;
                                     border-radius: 5px;
                                     align-items: center;
                                     overflow: hidden;
                                     padding-bottom: 10px;
                                     box-shadow: 1px 2px 3px 1px #fff;
 
-                                    .carrossel{
+                                    .carrossel {
                                         box-shadow: 1px 1px 1px red;
                                         width: 280px;
                                         height: 160px;
                                         overflow: hidden;
                                         margin-top: -30px;
 
-                                        .container{
+                                        .container {
                                             display: flex;
                                             flex-direction: row;
-                                            transition: transform 0.7s ease-in-out;
+                                            transition: transform 1s ease-in-out;
                                             transform: translateX(0);
 
-                                            img{
+                                            img {
                                                 object-fit: cover;
                                                 width: 100%;
                                                 height: 100%;
@@ -480,33 +479,34 @@ header{
                                         }
                                     }
 
-                                    .competencia{
+                                    .competencia {
                                         display: flex;
                                         flex-direction: row;
                                         background-color: #004d40;
 
-                                        img{
+                                        img {
                                             object-fit: cover;
                                         }
                                     }
 
-                                    h2{
+                                    h2 {
                                         color: #fff;
                                         padding-top: 10px;
                                     }
 
-                                    p{
+                                    p {
                                         color: #fff;
                                         padding-bottom: 10px;
                                     }
 
-                                    img{
+                                    img {
                                         width: 100%;
                                         object-fit: cover;
                                     }
                                 }
                             }
-                            button{
+
+                            button {
                                 width: 35px;
                                 height: 35px;
                                 border-radius: 50%;
@@ -520,22 +520,22 @@ header{
                                 font-size: 20px;
                             }
 
-                            button:first-of-type{
+                            button:first-of-type {
                                 left: 0;
                                 transform: translate(-80%, -50%);
                             }
 
-                            button:last-of-type{
+                            button:last-of-type {
                                 right: 0;
                                 transform: translate(80%, -50%);
                             }
 
 
-                            button:hover{
+                            button:hover {
                                 background-color: #535353;
                             }
 
-                            .length-dots{
+                            .length-dots {
                                 position: absolute;
                                 left: 25%;
                                 bottom: 0;
@@ -543,7 +543,7 @@ header{
                                 display: flex;
                                 gap: 10px;
 
-                                .dot{
+                                .dot {
                                     display: inline-block;
                                     background-color: #fff;
                                     width: 10px;
@@ -551,14 +551,14 @@ header{
                                     border-radius: 50%;
                                 }
 
-                                .dot.current{
-                                    background-color: #004d40;
+                                .dot.current {
+                                    background-color: #B62E2C;
                                 }
                             }
                         }
                     }
 
-                    .imgs-projetos{
+                    .imgs-projetos {
                         width: 100%;
                         height: 100%;
                     }
@@ -568,84 +568,113 @@ header{
     }
 
     @keyframes translateY {
-        to{
+        to {
             transform: translateY(0px) scale(1);
         }
-        from{
+
+        from {
             transform: translateY(-8px) scale(1.1);
         }
     }
 
     @keyframes scrollinfinite {
-        to{
+        to {
             translate: calc(-50% - 10px);
         }
     }
 }
 
-.btn-padrao{
+.btn-padrao {
     padding: 9px 20px;
-    background:  #00d084;
+    background-color: transparent;
     border-radius: 5px;
     color: #fff;
+    border: 1px solid #fff;
     text-decoration: none;
-    box-shadow: 3px 3px 2px 1px #fff;
     transition: all 1s;
     margin-bottom: 5px;
+    transition: all 1s;
 }
 
-.btn-padrao:hover{
-    background-color: transparent;
-    box-shadow: 3px 3px 2px 1px #00d084;
+.btn-padrao:hover {
+    transition: all 1s;
+    border-color: #740807;
 }
 
-.projetos{
+.projetos {
     display: flex;
     flex-direction: column;
-    background: linear-gradient(to left, #00E80E -100%, #000000);
+    background: darkgoldenrod;
     width: 100%;
     height: auto;
     overflow: hidden;
+    padding: 30px 150px;
 
-    .slide{
+    .text{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 30px 0;
+        align-items: center;
+        gap: 30px;
+
+        hr{
+            width: 50%;
+            height: 3px;
+            background: #fff;
+            border: none;
+        }
+
+        h1{
+            font-size: 40px;
+            color: #fff;
+        }
+
+    }
+
+
+    .slide {
         position: relative;
+        padding: 15px;
 
-        .slider2{
+        .slider2 {
             overflow: hidden;
             width: 100%;
             border-radius: 5px;
             scroll-behavior: smooth;
 
-            .context2{
+            .context2 {
                 display: flex;
                 width: fit-content;
+                gap: 10px;
 
-                .card{
+                .card {
                     display: flex;
                     flex-direction: column;
                     width: 310px;
                     height: 410px;
-                    background-image: linear-gradient(to left, #000, #434343);
+                    background-color: transparent;
                     align-items: center;
                     text-align: center;
                     overflow: hidden;
                     padding-bottom: 10px;
-                    border: 2px solid darkgoldenrod;
+                    border: 1px solid #fff;
+                    border-radius: 10px;
 
-                    .carrossel{
-                        box-shadow: 1px 1px 1px red;
+                    .carrossel {
+                        box-shadow: 1px 1px 1px #091c25;
                         width: 310px;
                         height: 160px;
                         overflow: hidden;
                         margin-top: -30px;
 
-                        .container{
+                        .container {
                             display: flex;
                             flex-direction: row;
                             transition: transform 0.7s ease-in-out;
                             transform: translateX(0);
 
-                            img{
+                            img {
                                 object-fit: cover;
                                 width: 100%;
                                 height: 100%;
@@ -653,24 +682,24 @@ header{
                         }
                     }
 
-                    .competencia{
+                    .competencia {
                         display: flex;
                         flex-direction: row;
                         background-color: #fff;
                         height: 80px;
 
-                        img{
+                        img {
                             object-fit: cover;
                         }
                     }
 
-                    h2{
+                    h2 {
                         color: #fff;
                         padding-top: 10px;
                         margin-bottom: 15px;
                     }
 
-                    p{
+                    p {
                         color: #fff;
                         padding-bottom: 10px;
                         margin-bottom: 15px;
@@ -678,18 +707,18 @@ header{
 
 
 
-                    img{
+                    img {
                         width: 100%;
                         object-fit: cover;
                     }
                 }
             }
 
-            button{
+            button {
                 display: flex;
                 width: 45px;
                 height: 45px;
-                color: darkgoldenrod;
+                color: #740807;
                 background-color: transparent;
                 border: none;
                 position: absolute;
@@ -702,167 +731,191 @@ header{
                 text-align: center;
             }
 
-            button:first-of-type{
+            button:first-of-type {
                 left: 0;
                 transform: translate(90%, -50%);
             }
 
-            button:last-of-type{
+            button:last-of-type {
                 right: 0;
                 transform: translate(-90%, -50%);
             }
 
-            button:hover{
-                background-color: #535353;
+            button:hover {
+                color: #091c25;
             }
         }
     }
-
-
 }
 
-#contatos{
+#contatos {
     max-width: 100%;
     text-align: center;
     align-items: center;
     justify-content: center;
-    background-color: #fff;
+    background-color: #091c25;
 
-    .flex-5{
+    .flex-5 {
         width: 100%;
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 40px 180px;
+        flex-direction: column;
+        padding: 40px 150px;
         flex-basis: 100%;
         text-align: center;
         align-items: center;
         background-color: transparent;
 
-        .title-perguntas{
+        .title-perguntas {
+            width: 100%;
             display: flex;
             flex-direction: column;
-            flex-basis: 35%;
             flex-wrap: wrap;
             align-items: center;
             justify-content: center;
 
-            hr{
-                width: 100px;
-                height: 5px;
-                background-color: #00E80E;
-                border: none;
-                margin: auto;
+            .text{
+                display: flex;
+                width: 100%;
+                align-items: center;
+                gap: 30px;
+                padding: 30px 0;
+
+
+                hr {
+                    width: 50%;
+                    height: 3px;
+                    background-color: #fff;
+                    border: none;
+
+                }
+    
+                h1 {
+                    font-size: 30px;
+                    font-weight: bold;
+                    color: #fff;
+                    white-space: nowrap;
+                }
+
             }
 
-            h1{
-                font-size: 30px;
-                font-weight: 300;
-                color: #333;
-                padding: 30px;
-                white-space: nowrap;
-            }
-
-            .icons{
+            .icons {
                 display: flex;
                 flex-direction: row;
                 justify-content: space-around;
                 padding: 20px 0;
-                gap: 10px;
-    
-                #icon2, #icon1, #icon{
+                gap: 5px;
+                margin-top: -40px;
+
+                #icon2,
+                #icon1,
+                #icon {
+                    display: flex;
+                    flex-direction: column;
                     font-size: 25px;
-                    color: #939393;
-                    transition: all 1s;
-                    border-top: 5px solid #939393;
-                    border-bottom: 15px solid #939393;
-                    border-left: 1px solid #939393;
-                    border-right: 1px solid #939393;
+                    width: 100px;
+                    height: 100px;
+                    color: #fff;
+                    border: 2px solid #fff;
                     padding: 10px 15px;
-                    border-radius: 15px;
+                    border-radius: 50%;
                     cursor: pointer;
-    
-                    p{
-                        font-size: 18px;
+                    align-items: center;
+                    justify-content: center;
+                    animation: Scale 1s  alternate infinite;
+
+
+                    i, p {
+                        display: flex;
+                        flex-direction: column;
+                        font-size: 15px;
                         font-weight: bold;
+                        background-color: transparent;
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                }
+
+                @keyframes Scale {
+                    to {
+                        transform: scale(0.8);
+                    }
+                    from {
+                        transform: scale(0.9);
                     }
                 }
-    
-                #icon2:hover, #icon1:hover, #icon:hover{
-                    color: #00E80E;
-                    transition: all 1s;
-                    animation: translateY  2s alternate infinite ;
-                }
             }
-    
+
         }
 
-        .block-2{
-            flex-basis: 65%;
+        .block-2 {
+            padding: 0 150px;
 
-            .flex{
+            .flex {
                 display: flex;
                 flex-direction: column;
                 width: 100%;
                 align-items: center;
                 padding: 20px 5px;
                 border-radius: 5px;
-                background-color: #fff;
+                background-color: transparent;
 
-                .card{
+                .card {
                     width: 100%;
                     display: flex;
                     flex-direction: column;
+                    gap: 5px;
 
-                    .mais-ceta{
+                    .mais-ceta {
                         display: flex;
-                        padding: 5px 10px;
+                        padding: 10px 20px;
                         justify-content: space-between;
-                        border: 1px solid #939393;
+                        border: 1px solid #fff;
                         align-items: center;
                         cursor: pointer;
-                        margin-top: -20px;
 
-                        button{
+                        button {
                             border: none;
                             background-color: transparent;
-                            color: #535353;
+                            color: #fff;
                             padding: 5px 10px;
                             font-size: 27px;
                             cursor: pointer;
                             transition: all 1s;
                         }
-                        
-                        button:hover{
-                            color: #f69b60;
+
+                        button:hover {
+                            color: #19D16A;
                         }
 
-                        h2{
+                        h2 {
                             font-size: 19px;
                             font-weight: bold;
-                            color: #535353;
+                            color: #fff;
                             justify-content: center;
                             font-size: 'roboto';
                         }
-
                     }
 
-                    .card-mais{
+                    .card-mais {
                         height: 0;
                         overflow: hidden;
                         transition: all 0.4s;
                     }
 
-                    #mais, #mais1, #mais2{
+                    #mais,
+                    #mais1,
+                    #mais2 {
                         font-size: 15px;
-                        color: #535353;
+                        color: #fff;
+                        background-color: transparent;
                         text-align: justify;
                         padding: 0px 50px;
                         margin-top: 20px;
                     }
 
-                    .ativo{
-                        height: 150px;
+                    .ativo {
+                        height: 130px;
                         transition: all 0.4s;
                     }
                 }
@@ -871,12 +924,13 @@ header{
 
     }
 
-    .footer{
-        background: linear-gradient(to right, #00E80E -100%, #000);
+    .footer {
+        background: darkgoldenrod;
 
-        .bottom{
+        .bottom {
+            padding-bottom: 100px;
 
-            .top{
+            .top {
                 display: flex;
                 flex-direction: row;
                 width: 100%;
@@ -886,14 +940,14 @@ header{
                 justify-content: center;
                 text-align: left;
 
-                .flex-2{
-                    
-                    h1{
+                .flex-2 {
+
+                    h1 {
                         font-size: 20px;
                         font-weight: 200;
                     }
 
-                    h2{
+                    h2 {
                         font-size: 20px;
                         font-weight: 200;
                     }
@@ -901,87 +955,105 @@ header{
             }
 
 
-            .rolagem{
+            .rolagem {
+                padding: 0 180px;
 
-                .tela-rolagem{
+                .tela-rolagem {
                     width: 100%;
                     display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
+                    flex-direction: column;
                     padding: 20px 20px;
-                    background: linear-gradient(to right, #00E80E -100%, #000);
+                    background: transparent;
+                    gap: 30px;
 
-                    h2{
+                    .contato{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 30px;
+                        
+                        hr {
+                            width: 50%;
+                            height: 3px;
+                            background-color: #fff;
+                            border: none;
+                        }
+            
+                        h1 {
+                            font-size: 36px;
+                            font-weight: bold;
+                            color: #fff;
+                            padding: 20px;
+                        }
+                    }
+
+                    h2 {
                         color: #fff;
                         font-size: 30px;
                         font-weight: 300;
                     }
 
-                    .icons{
+                    .icons {
                         font-size: 25px;
                         display: flex;
                         flex-direction: row;
-                        gap: 30px;
+                        gap: 10px;
+                        justify-content: center;
 
-                        a{
-                            color: #F5F5DC;
+                        a {
+                            text-decoration: none;
+                            display: flex;
+                            width: 40px;
+                            height: 40px;
+                            color: #fff;
                             font-size: 30px;
                             transition: all 1s;
+                            background-color: #091c25;
+                            padding: 5px;
+                            border-radius: 5px;
+                            align-items: center;
+                            justify-content: center;
                         }
 
-                        a:hover{
+                        a:hover {
                             animation: translateY 2s alternate infinite;
-                            color: #00E80E;
+                            color: #740807;
                         }
-                    }  
+                    }
                 }
             }
         }
-    }
-
-    p{
-        background-color: #fff;
-        padding: 5px 0;
-    }
-
-    .copy{
-        
-        background: linear-gradient(to right, #00E80E -100%, #000);
-        padding: 5px 0;
-        color: #fff;
-        font-size: 12px;
-        font-weight: 100;
     }
 }
 
 // responsivo 1300px//
 
 @media screen and (max-width: 1300px) {
-    .container{
+    .container {
 
-        .linha-interna{
+        .linha-interna {
 
-            .flex{
+            .flex {
                 display: flex;
                 flex-direction: column;
                 gap: 30px;
 
 
-                .conteudo-maior{
+                .conteudo-maior {
                     width: 75%;
                     margin: auto;
 
-                    .block{
+                    .block {
 
-                        .coluna-1{
+                        .coluna-1 {
 
-                            .foto-perfil{
+                            .foto-perfil {
                                 width: 140px;
                                 height: 140px;
                                 left: 50px;
                                 top: 60px;
 
-                                .foto{
+                                .foto {
                                     width: 130px;
                                     height: 130px;
                                 }
@@ -990,7 +1062,7 @@ header{
                     }
                 }
 
-                .projetos-contatos{
+                .projetos-contatos {
                     width: 30%;
                     margin: auto;
                 }
@@ -1002,94 +1074,91 @@ header{
 // responsivo 1140px //
 
 @media screen and (max-width: 1140px) {
-    .container{
+    .container {
 
-        .linha-interna{
+        .linha-interna {
 
-            .flex{
+            .flex {
 
-                .conteudo-maior{
+                .conteudo-maior {
                     width: 75%;
 
-                    .block{
+                    .block {
 
-                        .coluna-1{
+                        .coluna-1 {
 
-                            .top{
+                            .top {
 
-                                .flex-2{
-                                    h1{
+                                .flex-2 {
+                                    h1 {
                                         font-size: 20px;
 
                                     }
 
-                                    h2{
+                                    h2 {
                                         font-size: 18px;
                                     }
 
-                                    a{
+                                    a {
                                         font-size: 30px;
                                     }
                                 }
                             }
 
-                            .rolagem{
-    
-                                .espaco_foto{
-                                }
-    
-                                .tela-rolagem{
-    
-                                    .items-fora{
-    
-                                        p{
+                            .rolagem {
+
+                                .espaco_foto {}
+
+                                .tela-rolagem {
+
+                                    .items-fora {
+
+                                        p {
                                             font-size: 15px;
                                         }
                                     }
-    
-                                    i{
+
+                                    i {
                                         font-size: 18px;
                                     }
-    
-                                    p{
+
+                                    p {
                                         font-size: 18px;
                                     }
                                 }
                             }
-    
 
-                            
 
-                            .foto-perfil{
+
+
+                            .foto-perfil {
                                 left: 20px;
                                 top: 50px;
 
-                                .foto{
-
-                                }
+                                .foto {}
                             }
                         }
 
-                        .flex-3{
+                        .flex-3 {
 
-                            .conteudo{
+                            .conteudo {
 
-                                h1{
+                                h1 {
                                     font-size: 28px;
                                 }
 
-                                p{
+                                p {
                                     font-size: 13px;
                                 }
 
-                                a{
-                                    font-size: 13px ;
+                                a {
+                                    font-size: 13px;
                                 }
                             }
 
-                            .img{
+                            .img {
 
-                                img{
+                                img {
                                     width: 200px;
                                     height: 200px;
                                 }
@@ -1098,7 +1167,7 @@ header{
                     }
                 }
 
-                .projetos-contatos{
+                .projetos-contatos {
                     width: 35%;
                 }
             }
@@ -1111,97 +1180,96 @@ header{
 
 
 @media screen and (max-width: 1024px) {
-    .container{
+    .container {
 
-        .linha-interna{
+        .linha-interna {
 
-            .flex{
+            .flex {
 
-                .conteudo-maior{
+                .conteudo-maior {
                     width: 85%;
 
-                    .block{
+                    .block {
 
-                        .coluna-1{
+                        .coluna-1 {
 
-                            .top{
+                            .top {
 
-                                .flex-2{
-                                    h1{
+                                .flex-2 {
+                                    h1 {
                                         font-size: 18px;
 
                                     }
 
-                                    h2{
+                                    h2 {
                                         font-size: 17px;
                                     }
 
-                                    a{
+                                    a {
                                         font-size: 25px;
                                     }
                                 }
                             }
 
-                            .rolagem{
-    
-                                .espaco_foto{
-                                }
-    
-                                .tela-rolagem{
-    
-                                    .items-fora{
-    
-                                        p{
+                            .rolagem {
+
+                                .espaco_foto {}
+
+                                .tela-rolagem {
+
+                                    .items-fora {
+
+                                        p {
                                             font-size: 12px;
                                         }
                                     }
-    
-                                    i{
+
+                                    i {
                                         font-size: 15px;
                                     }
-    
-                                    p{
+
+                                    p {
                                         font-size: 15px;
                                     }
                                 }
                             }
-    
 
-                            
 
-                            .foto-perfil{
+
+
+                            .foto-perfil {
                                 width: 130px;
                                 height: 130px;
                                 left: 30px;
                                 top: 60px;
 
-                                .foto{
+                                .foto {
                                     width: 120px;
                                     height: 120px;
                                 }
                             }
                         }
 
-                        .flex-3{
+                        .flex-3 {
 
-                            .conteudo{
+                            .conteudo {
 
-                                h1{
+                                h1 {
                                     font-size: 25px;
                                 }
 
-                                p{
+                                p {
                                     font-size: 12px;
                                 }
 
-                                a{
-                                    font-size: 12px ;
+                                a {
+                                    font-size: 12px;
                                 }
                             }
 
-                            .img{
+                            .img {
 
-                                img{
+                                img {
                                     width: 170px;
                                     height: 170px;
                                 }
@@ -1210,7 +1278,7 @@ header{
                     }
                 }
 
-                .projetos-contatos{
+                .projetos-contatos {
                     width: 45%;
                 }
             }
@@ -1222,93 +1290,92 @@ header{
 // responsivo 908px //
 
 @media screen and (max-width: 908px) {
-    .container{
+    .container {
 
-        .linha-interna{
+        .linha-interna {
 
-            .flex{
+            .flex {
 
-                .conteudo-maior{
+                .conteudo-maior {
                     width: 90%;
 
-                    .block{
+                    .block {
 
-                        .coluna-1{
+                        .coluna-1 {
 
-                            .top{
+                            .top {
 
-                                .flex-2{
-                                    h1{
+                                .flex-2 {
+                                    h1 {
                                         font-size: 18px;
 
                                     }
 
-                                    h2{
+                                    h2 {
                                         font-size: 17px;
                                     }
 
-                                    a{
+                                    a {
                                         font-size: 25px;
                                     }
                                 }
                             }
 
-                            .rolagem{
-    
-                                .espaco_foto{
-                                }
-    
-                                .tela-rolagem{
-    
-                                    .items-fora{
-    
-                                        p{
+                            .rolagem {
+
+                                .espaco_foto {}
+
+                                .tela-rolagem {
+
+                                    .items-fora {
+
+                                        p {
                                             font-size: 20px;
                                         }
                                     }
-    
-                                    img{
+
+                                    img {
                                         display: none;
                                     }
                                 }
                             }
-    
 
-                            
 
-                            .foto-perfil{
+
+
+                            .foto-perfil {
                                 width: 130px;
                                 height: 130px;
                                 left: 30px;
                                 top: 50px;
 
-                                .foto{
+                                .foto {
                                     width: 120px;
                                     height: 120px;
                                 }
                             }
                         }
 
-                        .flex-3{
+                        .flex-3 {
 
-                            .conteudo{
+                            .conteudo {
 
-                                h1{
+                                h1 {
                                     font-size: 22px;
                                 }
 
-                                p{
+                                p {
                                     font-size: 12px;
                                 }
 
-                                a{
-                                    font-size: 10px ;
+                                a {
+                                    font-size: 10px;
                                 }
                             }
 
-                            .img{
+                            .img {
 
-                                img{
+                                img {
                                     width: 160px;
                                     height: 160px;
                                 }
@@ -1317,7 +1384,7 @@ header{
                     }
                 }
 
-                .projetos-contatos{
+                .projetos-contatos {
                     width: 50%;
                 }
             }
@@ -1330,99 +1397,98 @@ header{
 // responsivo 850px //
 
 @media screen and (max-width: 850px) {
-    .container{
+    .container {
 
-        .linha-interna{
+        .linha-interna {
 
-            .flex{
+            .flex {
 
-                .conteudo-maior{
+                .conteudo-maior {
                     width: 95%;
 
-                    .block{
+                    .block {
 
-                        .coluna-1{
+                        .coluna-1 {
 
-                            .top{
+                            .top {
 
-                                .flex-2{
-                                    h1{
+                                .flex-2 {
+                                    h1 {
                                         font-size: 18px;
 
                                     }
 
-                                    h2{
+                                    h2 {
                                         font-size: 17px;
                                     }
 
-                                    a{
+                                    a {
                                         font-size: 25px;
                                     }
                                 }
                             }
 
-                            .rolagem{
-    
-                                .espaco_foto{
-                                }
-    
-                                .tela-rolagem{
-    
-                                    .items-fora{
-    
-                                        p{
+                            .rolagem {
+
+                                .espaco_foto {}
+
+                                .tela-rolagem {
+
+                                    .items-fora {
+
+                                        p {
                                             font-size: 20px;
                                         }
                                     }
-    
-                                    img{
+
+                                    img {
                                         display: none;
                                     }
                                 }
-                            } 
+                            }
 
-                            .foto-perfil{
+                            .foto-perfil {
                                 width: 130px;
                                 height: 130px;
                                 left: 10px;
                                 top: 50px;
 
-                                .foto{
+                                .foto {
                                     width: 120px;
                                     height: 120px;
                                 }
                             }
                         }
 
-                        .flex-3{
+                        .flex-3 {
                             display: flex;
                             flex-direction: column;
                             align-items: center;
 
 
-                            .conteudo{
+                            .conteudo {
                                 width: 100%;
                                 gap: 10px;
 
-                                h1{
+                                h1 {
                                     font-size: 23px;
                                 }
 
-                                p{
+                                p {
                                     font-size: 15px;
                                     text-align: center;
                                     margin-bottom: 10px;
                                 }
 
-                                a{
-                                    font-size: 10px ;
+                                a {
+                                    font-size: 10px;
                                 }
                             }
 
-                            .img{
+                            .img {
                                 display: none;
 
-                                img{
+                                img {
                                     width: 150px;
                                     height: 150px;
                                 }
@@ -1431,7 +1497,7 @@ header{
                     }
                 }
 
-                .projetos-contatos{
+                .projetos-contatos {
                     width: 55%;
                 }
             }
@@ -1443,91 +1509,90 @@ header{
 // responsivo 768px //
 
 @media screen and (max-width: 768px) {
-    .container{
+    .container {
 
-        .linha-interna{
+        .linha-interna {
 
-            .flex{
+            .flex {
 
-                .conteudo-maior{
+                .conteudo-maior {
                     width: 100%;
 
-                    .block{
+                    .block {
 
-                        .coluna-1{
+                        .coluna-1 {
 
-                            .top{
+                            .top {
 
-                                .flex-2{
-                                    h1{
+                                .flex-2 {
+                                    h1 {
                                         font-size: 18px;
 
                                     }
 
-                                    h2{
+                                    h2 {
                                         font-size: 17px;
                                     }
 
-                                    a{
+                                    a {
                                         font-size: 25px;
                                     }
                                 }
                             }
 
-                            .rolagem{
-    
-                                .espaco_foto{
-                                }
-    
-                                .tela-rolagem{
-    
-                                    .items-fora{
-    
-                                        p{
+                            .rolagem {
+
+                                .espaco_foto {}
+
+                                .tela-rolagem {
+
+                                    .items-fora {
+
+                                        p {
                                             font-size: 20px;
                                         }
                                     }
-    
-                                    img{
+
+                                    img {
                                         display: none;
                                     }
                                 }
-                            } 
+                            }
 
-                            .foto-perfil{
+                            .foto-perfil {
                                 width: 120px;
                                 height: 120px;
                                 left: 20px;
                                 top: 55px;
 
-                                .foto{
+                                .foto {
                                     width: 110px;
                                     height: 110px;
                                 }
                             }
                         }
 
-                        .flex-3{
+                        .flex-3 {
 
-                            .conteudo{
+                            .conteudo {
 
-                                h1{
+                                h1 {
                                     font-size: 22px;
                                 }
 
-                                p{
+                                p {
                                     font-size: 15px;
                                 }
 
-                                a{
-                                    font-size: 13px ;
+                                a {
+                                    font-size: 13px;
                                 }
                             }
 
-                            .img{
+                            .img {
                                 display: none;
 
-                                img{
+                                img {
                                     width: 150px;
                                     height: 150px;
                                 }
@@ -1536,7 +1601,7 @@ header{
                     }
                 }
 
-                .projetos-contatos{
+                .projetos-contatos {
                     width: 60%;
                 }
             }
@@ -1548,91 +1613,90 @@ header{
 // responsivo 700px //
 
 @media screen and (max-width: 700px) {
-    .container{
+    .container {
 
-        .linha-interna{
+        .linha-interna {
 
-            .flex{
+            .flex {
 
-                .conteudo-maior{
+                .conteudo-maior {
                     width: 100%;
 
-                    .block{
+                    .block {
 
-                        .coluna-1{
+                        .coluna-1 {
 
-                            .top{
+                            .top {
 
-                                .flex-2{
-                                    h1{
+                                .flex-2 {
+                                    h1 {
                                         font-size: 17px;
 
                                     }
 
-                                    h2{
+                                    h2 {
                                         font-size: 16px;
                                     }
 
-                                    a{
+                                    a {
                                         font-size: 22px;
                                     }
                                 }
                             }
 
-                            .rolagem{
-    
-                                .espaco_foto{
-                                }
-    
-                                .tela-rolagem{
-    
-                                    .items-fora{
-    
-                                        p{
+                            .rolagem {
+
+                                .espaco_foto {}
+
+                                .tela-rolagem {
+
+                                    .items-fora {
+
+                                        p {
                                             font-size: 17px;
                                         }
                                     }
-    
-                                    img{
+
+                                    img {
                                         display: none;
                                     }
                                 }
-                            } 
+                            }
 
-                            .foto-perfil{
+                            .foto-perfil {
                                 width: 110px;
                                 height: 110px;
                                 left: 10px;
                                 top: 60px;
 
-                                .foto{
+                                .foto {
                                     width: 100px;
                                     height: 100px;
                                 }
                             }
                         }
 
-                        .flex-3{
+                        .flex-3 {
 
-                            .conteudo{
+                            .conteudo {
 
-                                h1{
+                                h1 {
                                     font-size: 18px;
                                 }
 
-                                p{
+                                p {
                                     font-size: 14px;
                                 }
 
-                                a{
-                                    font-size: 12px ;
+                                a {
+                                    font-size: 12px;
                                 }
                             }
 
-                            .img{
+                            .img {
                                 display: none;
 
-                                img{
+                                img {
                                     width: 150px;
                                     height: 150px;
                                 }
@@ -1641,7 +1705,7 @@ header{
                     }
                 }
 
-                .projetos-contatos{
+                .projetos-contatos {
                     width: 65%;
                 }
             }
@@ -1653,91 +1717,90 @@ header{
 // responsivo 630px //
 
 @media screen and (max-width: 630px) {
-    .container{
+    .container {
 
-        .linha-interna{
+        .linha-interna {
 
-            .flex{
+            .flex {
 
-                .conteudo-maior{
+                .conteudo-maior {
                     width: 100%;
 
-                    .block{
+                    .block {
 
-                        .coluna-1{
+                        .coluna-1 {
 
-                            .top{
+                            .top {
 
-                                .flex-2{
-                                    h1{
+                                .flex-2 {
+                                    h1 {
                                         font-size: 16px;
 
                                     }
 
-                                    h2{
+                                    h2 {
                                         font-size: 15px;
                                     }
 
-                                    a{
+                                    a {
                                         font-size: 20px;
                                     }
                                 }
                             }
 
-                            .rolagem{
-    
-                                .espaco_foto{
-                                }
-    
-                                .tela-rolagem{
-    
-                                    .items-fora{
-    
-                                        p{
+                            .rolagem {
+
+                                .espaco_foto {}
+
+                                .tela-rolagem {
+
+                                    .items-fora {
+
+                                        p {
                                             font-size: 15px;
                                         }
                                     }
-    
-                                    img{
+
+                                    img {
                                         display: none;
                                     }
                                 }
-                            } 
+                            }
 
-                            .foto-perfil{
+                            .foto-perfil {
                                 width: 110px;
                                 height: 110px;
                                 left: 10px;
                                 top: 60px;
 
-                                .foto{
+                                .foto {
                                     width: 100px;
                                     height: 100px;
                                 }
                             }
                         }
 
-                        .flex-3{
+                        .flex-3 {
 
-                            .conteudo{
+                            .conteudo {
 
-                                h1{
+                                h1 {
                                     font-size: 18px;
                                 }
 
-                                p{
+                                p {
                                     font-size: 14px;
                                 }
 
-                                a{
-                                    font-size: 12px ;
+                                a {
+                                    font-size: 12px;
                                 }
                             }
 
-                            .img{
+                            .img {
                                 display: none;
 
-                                img{
+                                img {
                                     width: 150px;
                                     height: 150px;
                                 }
@@ -1746,7 +1809,7 @@ header{
                     }
                 }
 
-                .projetos-contatos{
+                .projetos-contatos {
                     width: 70%;
                 }
             }
@@ -1758,92 +1821,91 @@ header{
 // responsivo 600px //
 
 @media screen and (max-width: 600px) {
-    .container{
+    .container {
 
-        .linha-interna{
+        .linha-interna {
 
-            .flex{
+            .flex {
 
-                .conteudo-maior{
+                .conteudo-maior {
                     width: 100%;
 
-                    .block{
+                    .block {
 
-                        .coluna-1{
+                        .coluna-1 {
 
-                            .top{
+                            .top {
 
-                                .flex-2{
-                                    h1{
+                                .flex-2 {
+                                    h1 {
                                         font-size: 16px;
                                     }
 
-                                    h2{
+                                    h2 {
                                         font-size: 15px;
                                     }
 
-                                    a{
+                                    a {
                                         font-size: 20px;
                                     }
                                 }
                             }
 
-                            .rolagem{
-    
-                                .espaco_foto{
-                                }
-    
-                                .tela-rolagem{
-    
-                                    .items-fora{
-    
-                                        p{
+                            .rolagem {
+
+                                .espaco_foto {}
+
+                                .tela-rolagem {
+
+                                    .items-fora {
+
+                                        p {
                                             font-size: 13px;
                                             text-align: end;
                                         }
                                     }
-    
-                                    img{
+
+                                    img {
                                         display: none;
                                     }
                                 }
-                            } 
+                            }
 
-                            .foto-perfil{
+                            .foto-perfil {
                                 width: 100px;
                                 height: 100px;
                                 left: 10px;
                                 top: 70px;
                                 display: none;
 
-                                .foto{
+                                .foto {
                                     width: 90px;
                                     height: 90px;
                                 }
                             }
                         }
 
-                        .flex-3{
+                        .flex-3 {
 
-                            .conteudo{
+                            .conteudo {
 
-                                h1{
+                                h1 {
                                     font-size: 18px;
                                 }
 
-                                p{
+                                p {
                                     font-size: 12px;
                                 }
 
-                                a{
-                                    font-size: 12px ;
+                                a {
+                                    font-size: 12px;
                                 }
                             }
 
-                            .img{
+                            .img {
                                 display: none;
 
-                                img{
+                                img {
                                     width: 150px;
                                     height: 150px;
                                 }
@@ -1852,7 +1914,7 @@ header{
                     }
                 }
 
-                .projetos-contatos{
+                .projetos-contatos {
                     width: 100%;
                 }
             }
@@ -1864,93 +1926,92 @@ header{
 // responsivo 500px //
 
 @media screen and (max-width: 500px) {
-    .container{
+    .container {
 
-        .linha-interna{
+        .linha-interna {
 
-            .flex{
+            .flex {
 
-                .conteudo-maior{
+                .conteudo-maior {
                     width: 100%;
 
-                    .block{
+                    .block {
 
-                        .coluna-1{
+                        .coluna-1 {
 
-                            .top{
+                            .top {
 
-                                .flex-2{
-                                    h1{
+                                .flex-2 {
+                                    h1 {
                                         font-size: 15px;
                                     }
 
-                                    h2{
+                                    h2 {
                                         font-size: 14px;
                                     }
 
-                                    a{
+                                    a {
                                         font-size: 10px;
                                     }
                                 }
                             }
 
-                            .rolagem{
-    
-                                .espaco_foto{
-                                }
-    
-                                .tela-rolagem{
-    
-                                    .items-fora{
-    
-                                        p{
+                            .rolagem {
+
+                                .espaco_foto {}
+
+                                .tela-rolagem {
+
+                                    .items-fora {
+
+                                        p {
                                             font-size: 11px;
                                             text-align: end;
                                         }
                                     }
-    
-                                    img{
+
+                                    img {
                                         display: none;
                                     }
                                 }
-                            } 
+                            }
 
-                            .foto-perfil{
+                            .foto-perfil {
                                 width: 100px;
                                 height: 100px;
                                 left: 10px;
                                 top: 70px;
                                 display: none;
 
-                                .foto{
+                                .foto {
                                     width: 90px;
                                     height: 90px;
                                 }
                             }
                         }
 
-                        .flex-3{
+                        .flex-3 {
 
-                            .conteudo{
+                            .conteudo {
 
-                                h1{
+                                h1 {
                                     font-size: 15px;
                                 }
 
-                                p{
+                                p {
                                     font-size: 10px;
                                     text-align: justify;
                                 }
 
-                                a{
-                                    font-size: 11px ;
+                                a {
+                                    font-size: 11px;
                                 }
                             }
 
-                            .img{
+                            .img {
                                 display: none;
 
-                                img{
+                                img {
                                     width: 150px;
                                     height: 150px;
                                 }
@@ -1959,7 +2020,7 @@ header{
                     }
                 }
 
-                .projetos-contatos{
+                .projetos-contatos {
                     width: 100%;
                 }
             }
