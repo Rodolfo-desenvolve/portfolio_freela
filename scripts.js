@@ -109,8 +109,6 @@ function controlslide2({ target: { id } }){
 
 const imgs = document.getElementById('img')
 const img = document.querySelectorAll('#img img')
-const imgs2 = document.getElementById('img2')
-const img2 = document.querySelectorAll('#img2 img')
 const imgs3 = document.getElementById('img3')
 const img3 = document.querySelectorAll('#img3 img')
 const imgs4 = document.getElementById('img4')
@@ -119,47 +117,41 @@ const imgs5 = document.getElementById('img5')
 const img5 = document.querySelectorAll('#img5 img')
 
 let idx = 0;
-let idx2 = 0;
 let idx3 = 0;
 let idx4 = 0;
 let idx5 = 0;
 
 function carrossel(){
     idx++;
-    idx2++;
-    idx3++;
-    idx4++;
-    idx5++;
 
     if(idx > img.length - 1){
         idx = 0;
     }
 
-    imgs.style.transform =  `translateX(${-idx * 280}px)`
+    imgs.style.transform = `translateX(${-idx * 310}px)`
 
-    if(idx2 > img2.length - 1){
-        idx2 = 0;
-    }
-
-    imgs2.style.transform =  `translateX(${-idx2 * 280}px)`
+    idx3++;
+    
 
     if(idx3 > img3.length - 1){
         idx3 = 0;
     }
 
-    imgs3.style.transform =  `translateX(${-idx3 * 280}px)`
+    idx4++;
+    imgs3.style.transform =  `translateX(${-idx3 * 310}px)`
 
     if(idx4 > img4.length - 1){
         idx4 = 0;
     }
 
-    imgs4.style.transform =  `translateX(${-idx4 * 280}px)`
+    idx5++;
+    imgs4.style.transform =  `translateX(${-idx4 * 310}px)`
 
     if(idx5 > img5.length - 1){
         idx5 = 0;
     }
 
-    imgs5.style.transform =  `translateX(${-idx5 * 280}px)`
+    imgs5.style.transform =  `translateX(${-idx5 * 310}px)`
 }
 
 setInterval(carrossel, 1500)
@@ -168,8 +160,6 @@ setInterval(carrossel, 1500)
 
 const imgs6 = document.getElementById('img6')
 const img6 = document.querySelectorAll('#img6 img')
-const imgs7 = document.getElementById('img7')
-const img7 = document.querySelectorAll('#img7 img')
 const imgs8 = document.getElementById('img8')
 const img8 = document.querySelectorAll('#img8 img')
 const imgs9 = document.getElementById('img9')
@@ -178,14 +168,12 @@ const imgs10 = document.getElementById('img10')
 const img10 = document.querySelectorAll('#img10 img')
 
 let idx6 = 0;
-let idx7 = 0;
 let idx8 = 0;
 let idx9 = 0;
 let idx10 = 0;
 
 function carrossel2(){
     idx6++;
-    idx7++;
     idx8++;
     idx9++;
     idx10++;
@@ -195,12 +183,6 @@ function carrossel2(){
     }
 
     imgs6.style.transform =  `translateX(${-idx6 * 310}px)`
-
-    if(idx7 > img7.length - 1){
-        idx7 = 0;
-    }
-
-    imgs7.style.transform =  `translateX(${-idx7 * 310}px)`
 
     if(idx8 > img8.length - 1){
         idx8 = 0;
@@ -244,15 +226,15 @@ function leiaMais(){
     let title1 = document.getElementById('title1')
     let morebutton = document.getElementById('more-botton')
 
-    if(morebutton.innerHTML == '+'){
+    if(morebutton.innerHTML == '<i class="fa-solid fa-chevron-up"></i>'){
         title1.style.color = '#00E80E';
-        morebutton.innerHTML = '-';
+        morebutton.innerHTML = '<i class="fa-solid fa-chevron-down"></i>';
         icon.style.color = '#00E80E';
         morebutton.style.color = '#00E80E';
         icon.style.border = '2px solid #fff';
     }else{
         title1.style.color = '#fff';
-        morebutton.innerHTML = '+';
+        morebutton.innerHTML = '<i class="fa-solid fa-chevron-up"></i>';
         icon.style.color = '#fff';
         morebutton.style.color = '#fff';
         icon.style.border = '2px solid #fff';
@@ -264,15 +246,15 @@ function leiaMais1(){
     let icon1 = document.getElementById('icon1')
     let morebutton1 = document.getElementById('more-botton1')
 
-    if(morebutton1.innerHTML == '+'){
+    if(morebutton1.innerHTML == '<i class="fa-solid fa-chevron-up"></i>'){
         title2.style.color = '#00E80E';
-        morebutton1.innerHTML = '-';
+        morebutton1.innerHTML = '<i class="fa-solid fa-chevron-down"></i>';
         morebutton1.style.color = '#00E80E';
         icon1.style.color = '#00E80E';
         icon1.style.border = '2px solid #fff';
     }else{
         title2.style.color = '#fff'
-        morebutton1.innerHTML = '+'
+        morebutton1.innerHTML = '<i class="fa-solid fa-chevron-up"></i>'
         morebutton1.style.color = '#fff'
         icon1.style.color = '#fff';
         
@@ -285,16 +267,16 @@ function leiaMais2(){
     let title3 = document.getElementById('title3')
     let morebutton2 = document.getElementById('more-botton2')
 
-    if(morebutton2.innerHTML == '+'){
+    if(morebutton2.innerHTML == '<i class="fa-solid fa-chevron-up"></i>'){
         title3.style.color = '#00E80E'
-        morebutton2.innerHTML = '-';
+        morebutton2.innerHTML = '<i class="fa-solid fa-chevron-down"></i>';
         morebutton2.style.color = '#00E80E';
         icon2.style.color = '#00E80E';
         
         icon2.style.border = '2px solid #fff';
     }else{
         title3.style.color = '#fff'
-        morebutton2.innerHTML = '+';
+        morebutton2.innerHTML = '<i class="fa-solid fa-chevron-up"></i>';
         morebutton2.style.color = '#fff';
         icon2.style.color = '#fff';
         
